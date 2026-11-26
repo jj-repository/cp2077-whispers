@@ -1,0 +1,30 @@
+Whispers of Night City - texts for the Nexus upload form
+
+MOD NAME
+Whispers of Night City
+
+SUMMARY (max 350 characters)
+Night City's hidden gems as street rumours. A website posts a few whispers every day, each one a pin on your map: a body, a stash, a story nobody told you about. Read the shard, close the case. 194 gems in the city, 46 in Dogtown with Phantom Liberty. The street may whisper on its own when you walk by.
+
+CATEGORY
+Gameplay
+
+COVER IMAGE
+release\cover.png
+
+REQUIREMENTS (Nexus "requirements" tab)
+- RED4ext
+- redscript
+- Codeware
+- Browser Extension
+Optional: Mod Settings (settings menu; without it: defaults)
+Incompatible: Missing Persons - Fixer's Hidden Gems, Pacifica Typhoon - Dogtown's Hidden Gems (same gems; remove them, progress carries over)
+
+FILES (name / category / description)
+1. Whispers of Night City  |  Main file  |  WhispersOfNightCity_v0.1.1.zip
+The mod, one download: the website NETdir://nc.whispers, map pins, the street rolls, rewards, the settings menu (with Mod Settings). Needs RED4ext, redscript, Codeware, Browser Extension.
+
+PERMISSIONS (suggestion)
+- Upload to other sites: ask me first.
+- Modify / use in your own mods: ask me first.
+- No donation points restrictions.

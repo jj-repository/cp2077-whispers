@@ -1,0 +1,56 @@
+[center][size=6][b]Whispers of Night City[/b][/size]
+[i]Street talk, overheard and resold. Every whisper marks a spot on your map.[/i][/center]
+
+Night City is full of hidden gems: a body nobody reported, a stash nobody came back for, a drone that fell out of the sky, a little story CDPR tucked into a corner. This mod turns all of them into [b]street rumours[/b]. A website posts a few whispers every day, each one a pin on your map with a vague line and a rough location. Go there, find out what happened, close the case.
+
+[b]194 hidden gems in the city, 46 in Dogtown[/b] (with Phantom Liberty).
+
+[size=4][b]Features[/b][/size]
+[list]
+[*][b]NETdir://nc.whispers[/b] - open it on any computer. Three new whispers per game day (posted on your first visit that day). About a third are tip-locked: pay 25 eddies to hear them. [b]Ask around[/b] for one extra whisper any time (50 eddies).
+[*][b]Map pins only for what you've heard about[/b]. Hidden gems stay hidden until a whisper reveals them. The pin's tooltip shows the rumour and the place.
+[*][b]The street talks[/b]: when you enter a district or step out of a vehicle, there is a 20 % chance that the nearest hidden gem within 250 m gets revealed ("something happened near here"). At most once per game hour.
+[*][b]Closing a case[/b]:
+[list]
+[*]shard gems: the shard lands in your journal (picked up any time, revealed or not, counts);
+[*]Dogtown mail gems: open that mail on the computer;
+[*]Dogtown iconic weapons: pick the weapon up;
+[*]spot gems (no shard: a body, a drone, a stash): be at the revealed spot and pick something up there, or arrive there by stepping out of a vehicle / entering the district. Just walking past doesn't count: the mod never polls your position.
+[/list]
+[*][b]Rewards[/b]: every 10 closed cases crafting components + 150 eddies; close them all for 3000 eddies, legendary components and [b]Comrade's Hammer[/b].
+[*][b]Fair gates[/b]: city gems after "The Rescue" (Watson first, the rest after The Heist); Dogtown gems once Dogtown opens. Gems that become impossible through your choices or lifepath are dropped, never counted against you.
+[*][b]Zero idle cost[/b]: no timers, no polling, nothing per frame. Everything runs on game events (journal, facts, district changes, vehicle exits, item pickups, opening a mail).
+[/list]
+
+[size=4][b]Settings (Mod Settings, optional)[/b][/size]
+Esc > Mods > Whispers of Night City: whispers per day (0-5), tip-lock chance, tip and ask-around prices, street chance / radius / hours between rolls, Dogtown gems on/off, rewards on/off and payout amounts. Without Mod Settings everything runs on the defaults above.
+
+[size=4][b]Requirements[/b][/size]
+[list]
+[*]RED4ext
+[*]redscript
+[*]Codeware
+[*]Browser Extension
+[*]Optional: Mod Settings
+[*]Optional: Phantom Liberty (for the 46 Dogtown gems; detected automatically)
+[/list]
+
+[size=4][b]Incompatible[/b][/size]
+[b]Missing Persons - Fixer's Hidden Gems[/b] (5058) and [b]Pacifica Typhoon - Dogtown's Hidden Gems[/b] (12245): same gems, they would pin and pay them twice. Remove them before installing.
+[b]Your progress carries over[/b]: on the first load, gems you finished in those mods count as closed (they don't pay again), gigs you had open show up as whispers on your map. Cases closed before you installed this mod count toward the total but don't pay out.
+
+[size=4][b]Optional integration[/b][/size]
+If the author's own JJ Bank / JJ Rewards mods are installed, tips are paid from and rewards credited to the bank account (ledger "Whispers"), and the final reward goes through JJ Rewards. Without them: cash, and Comrade's Hammer straight to your inventory. Nothing to configure; the code for them only compiles when they are present.
+
+[size=4][b]Install[/b][/size]
+Extract the zip into the game folder (the one with bin, archive, r6). Files: r6\scripts\WhispersNC\ and archive\pc\mod\WhispersNC.archive.
+
+[size=4][b]Uninstall[/b][/size]
+Delete r6\scripts\WhispersNC\ and archive\pc\mod\WhispersNC.archive. The mod only stores a few quest facts in your save (wnc_*); they are harmless without it. Map pins are not saved, so nothing is left behind.
+
+[size=4][b]Notes[/b][/size]
+[list]
+[*]Positions and shard ids are the game's own; every shard and mail title was checked against the game's journal, every condition against its quest files. The rumour lines and location texts are written for this mod.
+[*]One gem (a shard CDPR removed from the world in 2.0) is never offered.
+[*]Console check: the game log shows "[WhispersNC] attach: ..." on every load.
+[/list]

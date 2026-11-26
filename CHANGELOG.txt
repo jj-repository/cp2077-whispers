@@ -1,0 +1,14 @@
+0.1.1
+- City gems open right after the first mission ("The Rescue", vanilla fact q001_mission0_complete) instead of
+  later in Act 1. Saves already past that point see them at once.
+
+0.1.0
+- First release. The game's hidden gems (194 in the city, 46 in Dogtown with Phantom Liberty) as street rumours on
+  the website NETdir://nc.whispers: a few whispers per game day (some tip-locked), "ask around" for one more, a map
+  pin for every revealed whisper. The street may whisper on its own when you enter a district or step out of a
+  vehicle near a hidden gem (20 %, 250 m, once per game hour). Cases close when you read the shard, open the mail,
+  pick up the weapon or reach the spot. Rewards every 10 cases and for all of them.
+- Settings menu (Mod Settings): whispers per day, tip-lock chance, prices, street chance / radius / cooldown,
+  Dogtown on/off, rewards and payouts.
+- Progress from Missing Persons - Fixer's Hidden Gems / Pacifica Typhoon - Dogtown's Hidden Gems carries over on the
+  first load (finished gems count as closed, they don't pay again). Those two mods are incompatible: remove them.

@@ -1,0 +1,86 @@
+# Whispers of Night City - rumour lines. Edit freely, then: python gen_data.py (rebuilds main\r6\scripts\WhispersNC\WNC_Data.reds
+# + data\RUMOURS_review.txt). Each gem gets ONE line from its pool (spread evenly by gem order) plus its location, shown as:
+#   "<line>"  -  <location>
+# Pools: [person] missing people, [stash] hidden stashes / dead drops, [thing] lost drones, cargo, machines,
+#        [place] Dogtown spots with a story, [weapon] Dogtown iconic weapons.
+# Keep them vague: they hint that something happened, never what. No quotes (") or backslashes inside a line.
+
+[person]
+Somebody stopped answering their holo. Last ping came from around here.
+Something happened here. Nobody's saying what.
+A choom stepped out for a smoke and never stepped back in.
+Heard a scream out this way last week. NCPD never showed.
+Flies have been circling this spot for days. Just saying.
+Somebody's mother keeps posting the same face. Last seen around here.
+Funny smell out this way. Locals walk the long way round now.
+A debt went unpaid. The collector was last seen here.
+Stray dogs won't stop barking at this place. Dogs know things.
+Somebody left here in a hurry. Door's still open.
+Missing-person flyers keep getting torn down around here. Who's tearing them?
+Trauma Team got a ping from here. Contract had lapsed. Nobody went.
+Two shots out this way, then nothing. That was days ago.
+A gig went sideways here. The runner never cashed out.
+Somebody's agent keeps ringing from this spot. Nobody picks up.
+A scav van idled here all night. Then it didn't.
+Kid on the corner swears a ghost lives here. Kids say a lot.
+Somebody owed somebody. This is where they last met.
+A lovers' quarrel out this way. Only one of them walked home.
+Somebody said back in five. That was a week ago.
+NetWatch blacked out a camera feed from here. Wonder why.
+Rent's overdue on a place out this way. Landlord stopped knocking.
+Something happened here. Go look before the scavs do.
+A street doc lost a patient around here. Not on the table.
+Somebody went looking for trouble out this way and found it.
+Lights on, music playing, nobody home. Been like that for days.
+A runner went dark mid-job somewhere around here.
+Gang tags got painted over here overnight. Fresh paint, old problem.
+Someone keeps leaving flowers at this spot. Nobody knows who for.
+A corpo came slumming out this way and didn't make the next meeting.
+Last anyone heard, they were headed this way with a bad plan.
+The bodega owner saw something here. Now he sees nothing.
+Somebody's chrome showed up for sale. Its owner didn't.
+A delivery never got signed for out here.
+Quiet spot. Too quiet, since last week.
+Two people walked in here. The cameras only saw one walk out.
+Somebody tried to disappear here. Maybe it worked.
+Word is someone got in over their head right about here.
+Somebody's last message was sent from this spot. Just one word.
+A fixer stopped asking about this place. That's never good.
+
+[stash]
+Word is somebody hid something here and never came back for it.
+A dead drop out this way went cold. Contents still inside, maybe.
+Somebody's rainy-day stash is around here. It's raining, V.
+An old smuggler's chalk mark showed up here. Means goods inside.
+A courier dumped a package here when the heat came down.
+Something's tucked away out this way. Finders keepers.
+A crew split a score here and one share never got collected.
+Somebody paid good eddies to keep this spot forgotten.
+
+[thing]
+A delivery drone dropped off the grid over this spot.
+Corpo hardware went missing out this way. They want it quiet.
+Something fell out of the sky around here. Nobody claimed it.
+A shipment never arrived. The tracker died right here.
+Machine noises from here at night. Then silence.
+Militech has been asking questions about this place. Get there first.
+Somebody's expensive toy stopped phoning home from around here.
+A load went off the books somewhere out this way.
+
+[place]
+Somebody set up a nice little corner here before the Barghest moved in. Wonder how it ended.
+Kurt's people keep walking past this spot without looking at it. On purpose.
+A squatter swears this place used to be somebody's whole world.
+Somebody spent a lot of nights up here. You can tell by the view.
+The stadium crowd talks about this spot in a whisper. Go see why.
+A Barghest patrol cleared this place out. They missed something.
+There's a story behind this spot. Nobody in Dogtown tells it the same way twice.
+Smugglers used to meet out this way. One of them left in a hurry.
+Light's still on out here, every night. Nobody's paying for it.
+Somebody wrote it all down and left it here. Dogtown doesn't read.
+
+[weapon]
+A piece with a reputation is lying around out here. Its owner doesn't need it anymore.
+Collectors in the Black Market keep asking about this spot. Get there first.
+Somebody's prized iron went quiet around here. Iron like that never stays lost.
+A legend in Dogtown, they say. Not a person. A weapon.

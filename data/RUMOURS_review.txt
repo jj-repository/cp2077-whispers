@@ -1,0 +1,324 @@
+WHISPERS OF NIGHT CITY (NETdir://nc.whispers) - every rumour line, for review
+Edit data\rumours.txt, then python gen_data.py. Each gem shows: "<line>" - <location>.
+
+== POOL [person] (40 lines, used by 181 gems)
+   1. Somebody stopped answering their holo. Last ping came from around here.
+   2. Something happened here. Nobody's saying what.
+   3. A choom stepped out for a smoke and never stepped back in.
+   4. Heard a scream out this way last week. NCPD never showed.
+   5. Flies have been circling this spot for days. Just saying.
+   6. Somebody's mother keeps posting the same face. Last seen around here.
+   7. Funny smell out this way. Locals walk the long way round now.
+   8. A debt went unpaid. The collector was last seen here.
+   9. Stray dogs won't stop barking at this place. Dogs know things.
+  10. Somebody left here in a hurry. Door's still open.
+  11. Missing-person flyers keep getting torn down around here. Who's tearing them?
+  12. Trauma Team got a ping from here. Contract had lapsed. Nobody went.
+  13. Two shots out this way, then nothing. That was days ago.
+  14. A gig went sideways here. The runner never cashed out.
+  15. Somebody's agent keeps ringing from this spot. Nobody picks up.
+  16. A scav van idled here all night. Then it didn't.
+  17. Kid on the corner swears a ghost lives here. Kids say a lot.
+  18. Somebody owed somebody. This is where they last met.
+  19. A lovers' quarrel out this way. Only one of them walked home.
+  20. Somebody said back in five. That was a week ago.
+  21. NetWatch blacked out a camera feed from here. Wonder why.
+  22. Rent's overdue on a place out this way. Landlord stopped knocking.
+  23. Something happened here. Go look before the scavs do.
+  24. A street doc lost a patient around here. Not on the table.
+  25. Somebody went looking for trouble out this way and found it.
+  26. Lights on, music playing, nobody home. Been like that for days.
+  27. A runner went dark mid-job somewhere around here.
+  28. Gang tags got painted over here overnight. Fresh paint, old problem.
+  29. Someone keeps leaving flowers at this spot. Nobody knows who for.
+  30. A corpo came slumming out this way and didn't make the next meeting.
+  31. Last anyone heard, they were headed this way with a bad plan.
+  32. The bodega owner saw something here. Now he sees nothing.
+  33. Somebody's chrome showed up for sale. Its owner didn't.
+  34. A delivery never got signed for out here.
+  35. Quiet spot. Too quiet, since last week.
+  36. Two people walked in here. The cameras only saw one walk out.
+  37. Somebody tried to disappear here. Maybe it worked.
+  38. Word is someone got in over their head right about here.
+  39. Somebody's last message was sent from this spot. Just one word.
+  40. A fixer stopped asking about this place. That's never good.
+
+== POOL [stash] (8 lines, used by 17 gems)
+   1. Word is somebody hid something here and never came back for it.
+   2. A dead drop out this way went cold. Contents still inside, maybe.
+   3. Somebody's rainy-day stash is around here. It's raining, V.
+   4. An old smuggler's chalk mark showed up here. Means goods inside.
+   5. A courier dumped a package here when the heat came down.
+   6. Something's tucked away out this way. Finders keepers.
+   7. A crew split a score here and one share never got collected.
+   8. Somebody paid good eddies to keep this spot forgotten.
+
+== POOL [thing] (8 lines, used by 8 gems)
+   1. A delivery drone dropped off the grid over this spot.
+   2. Corpo hardware went missing out this way. They want it quiet.
+   3. Something fell out of the sky around here. Nobody claimed it.
+   4. A shipment never arrived. The tracker died right here.
+   5. Machine noises from here at night. Then silence.
+   6. Militech has been asking questions about this place. Get there first.
+   7. Somebody's expensive toy stopped phoning home from around here.
+   8. A load went off the books somewhere out this way.
+
+== POOL [place] (10 lines, used by 30 gems)
+   1. Somebody set up a nice little corner here before the Barghest moved in. Wonder how it ended.
+   2. Kurt's people keep walking past this spot without looking at it. On purpose.
+   3. A squatter swears this place used to be somebody's whole world.
+   4. Somebody spent a lot of nights up here. You can tell by the view.
+   5. The stadium crowd talks about this spot in a whisper. Go see why.
+   6. A Barghest patrol cleared this place out. They missed something.
+   7. There's a story behind this spot. Nobody in Dogtown tells it the same way twice.
+   8. Smugglers used to meet out this way. One of them left in a hurry.
+   9. Light's still on out here, every night. Nobody's paying for it.
+  10. Somebody wrote it all down and left it here. Dogtown doesn't read.
+
+== POOL [weapon] (4 lines, used by 4 gems)
+   1. A piece with a reputation is lying around out here. Its owner doesn't need it anymore.
+   2. Collectors in the Black Market keep asking about this spot. Get there first.
+   3. Somebody's prized iron went quiet around here. Iron like that never stays lost.
+   4. A legend in Dogtown, they say. Not a person. A weapon.
+
+== ALL 240 GEMS (id, set, kind, pool, rumour as shown on the site and on the map pin)
+  1 city    shard [person] "Somebody stopped answering their holo. Last ping came from around here." - Little China, south-west side
+  2 city    shard [person] "Something happened here. Nobody's saying what." - Little China, south-east side
+  3 city    shard [person] "A choom stepped out for a smoke and never stepped back in." - Little China, south side
+  4 city    shard [thing] "A delivery drone dropped off the grid over this spot." - Little China, south-west side
+  5 city    shard [person] "Heard a scream out this way last week. NCPD never showed." - Little China, north-west side
+  6 city    shard [stash] "Word is somebody hid something here and never came back for it." - Little China, north-west side
+  7 city    shard [person] "Flies have been circling this spot for days. Just saying." - Little China, north-east side
+  8 city    shard [person] "Somebody's mother keeps posting the same face. Last seen around here." - Little China, south-east side
+  9 city    shard [person] "Funny smell out this way. Locals walk the long way round now." - Kabuki, north-east side, up high
+ 10 city    area  [thing] "Corpo hardware went missing out this way. They want it quiet." - Kabuki, south side, down low
+ 11 city    shard [person] "A debt went unpaid. The collector was last seen here." - Kabuki, south side
+ 12 city    shard [person] "Stray dogs won't stop barking at this place. Dogs know things." - Kabuki, south-east side
+ 13 city    shard [person] "Somebody left here in a hurry. Door's still open." - Kabuki, south side
+ 14 city    shard [person] "Missing-person flyers keep getting torn down around here. Who's tearing them?" - Kabuki, south-west side, up high
+ 15 city    shard [stash] "A dead drop out this way went cold. Contents still inside, maybe." - Kabuki, north side
+ 16 city    shard [person] "Trauma Team got a ping from here. Contract had lapsed. Nobody went." - Kabuki, north-east side, down low
+ 17 city    shard [person] "Two shots out this way, then nothing. That was days ago." - Kabuki, north side
+ 18 city    shard [person] "A gig went sideways here. The runner never cashed out." - Kabuki, north side
+ 19 city    shard [person] "Somebody's agent keeps ringing from this spot. Nobody picks up." - Kabuki, near the middle, down low
+ 20 city    area  [thing] "Something fell out of the sky around here. Nobody claimed it." - Kabuki, south side
+ 21 city    shard [person] "A scav van idled here all night. Then it didn't." - Little China, north side
+ 22 city    shard [thing] "A shipment never arrived. The tracker died right here." - Northside, north side
+ 23 city    shard [person] "Kid on the corner swears a ghost lives here. Kids say a lot." - Northside, near the middle
+ 24 city    shard [person] "Somebody owed somebody. This is where they last met." - Northside, south-east side
+ 25 city    shard [person] "A lovers' quarrel out this way. Only one of them walked home." - Northside, south-west side
+ 26 city    shard [thing] "Machine noises from here at night. Then silence." - Northside, south-east side, up high
+ 27 city    shard [person] "Somebody said back in five. That was a week ago." - Northside, west side
+ 28 city    shard [thing] "Militech has been asking questions about this place. Get there first." - Northside, west side, up high
+ 29 city    shard [person] "NetWatch blacked out a camera feed from here. Wonder why." - Northside, near the middle
+ 30 city    area  [stash] "Somebody's rainy-day stash is around here. It's raining, V." - Northside, near the middle
+ 31 city    shard [person] "Rent's overdue on a place out this way. Landlord stopped knocking." - Northside, west side
+ 32 city    shard [person] "Something happened here. Go look before the scavs do." - Northside, north side
+ 33 city    shard [person] "A street doc lost a patient around here. Not on the table." - Northside, north side
+ 34 city    shard [person] "Somebody went looking for trouble out this way and found it." - Northside, east side
+ 35 city    shard [person] "Lights on, music playing, nobody home. Been like that for days." - Northside, south-east side
+ 36 city    shard [person] "A runner went dark mid-job somewhere around here." - Northside, south-east side
+ 37 city    shard [person] "Gang tags got painted over here overnight. Fresh paint, old problem." - Japantown, near the middle, down low
+ 38 city    shard [person] "Someone keeps leaving flowers at this spot. Nobody knows who for." - Japantown, north side
+ 39 city    shard [person] "A corpo came slumming out this way and didn't make the next meeting." - Japantown, north side, down low
+ 40 city    shard [person] "Last anyone heard, they were headed this way with a bad plan." - Japantown, north-east side, down low
+ 41 city    shard [person] "The bodega owner saw something here. Now he sees nothing." - Japantown, north side
+ 42 city    shard [person] "Somebody's chrome showed up for sale. Its owner didn't." - Japantown, near the middle
+ 43 city    shard [stash] "An old smuggler's chalk mark showed up here. Means goods inside." - Japantown, south-east side, up high
+ 44 city    shard [person] "A delivery never got signed for out here." - Japantown, near the middle
+ 45 city    shard [person] "Quiet spot. Too quiet, since last week." - Japantown, south side
+ 46 city    shard [person] "Two people walked in here. The cameras only saw one walk out." - Japantown, south side, down low
+ 47 city    shard [person] "Somebody tried to disappear here. Maybe it worked." - Japantown, south side, down low
+ 48 city    shard [person] "Word is someone got in over their head right about here." - Japantown, north-west side
+ 49 city    shard [thing] "Somebody's expensive toy stopped phoning home from around here." - North Oak, south side, down low
+ 50 city    shard [person] "Somebody's last message was sent from this spot. Just one word." - Charter Hill, near the middle
+ 51 city    shard [person] "A fixer stopped asking about this place. That's never good." - Charter Hill, west side
+ 52 city    shard [person] "Somebody stopped answering their holo. Last ping came from around here." - Charter Hill, east side
+ 53 city    shard [person] "Something happened here. Nobody's saying what." - Charter Hill, south-east side
+ 54 city    area  [person] "A choom stepped out for a smoke and never stepped back in." - Charter Hill, south-east side
+ 55 city    shard [person] "Heard a scream out this way last week. NCPD never showed." - Charter Hill, west side
+ 56 city    shard [stash] "A courier dumped a package here when the heat came down." - Charter Hill, north-west side
+ 57 city    shard [person] "Flies have been circling this spot for days. Just saying." - Charter Hill, near the middle
+ 58 city    shard [person] "Somebody's mother keeps posting the same face. Last seen around here." - Rancho Coronado, south side, up high
+ 59 city    shard [person] "Funny smell out this way. Locals walk the long way round now." - Rancho Coronado, south side, down low
+ 60 city    shard [person] "A debt went unpaid. The collector was last seen here." - Rancho Coronado, near the middle, down low
+ 61 city    shard [person] "Stray dogs won't stop barking at this place. Dogs know things." - Rancho Coronado, near the middle
+ 62 city    shard [person] "Somebody left here in a hurry. Door's still open." - Rancho Coronado, north-east side, up high
+ 63 city    shard [stash] "Something's tucked away out this way. Finders keepers." - Rancho Coronado, north side
+ 64 city    shard [person] "Missing-person flyers keep getting torn down around here. Who's tearing them?" - Rancho Coronado, south-east side, up high
+ 65 city    shard [person] "Trauma Team got a ping from here. Contract had lapsed. Nobody went." - Rancho Coronado, south-west side
+ 66 city    shard [thing] "A load went off the books somewhere out this way." - Rancho Coronado, west side
+ 67 city    shard [person] "Two shots out this way, then nothing. That was days ago." - Arroyo, near the middle
+ 68 city    area  [person] "A gig went sideways here. The runner never cashed out." - Arroyo, north-east side, up high
+ 69 city    shard [stash] "A crew split a score here and one share never got collected." - Arroyo, north side
+ 70 city    shard [person] "Somebody's agent keeps ringing from this spot. Nobody picks up." - Arroyo, east side, down low
+ 71 city    shard [person] "A scav van idled here all night. Then it didn't." - Arroyo, north-west side
+ 72 city    shard [person] "Kid on the corner swears a ghost lives here. Kids say a lot." - Arroyo, south-west side
+ 73 city    shard [person] "Somebody owed somebody. This is where they last met." - Arroyo, south-west side
+ 74 city    shard [person] "A lovers' quarrel out this way. Only one of them walked home." - Arroyo, north-east side
+ 75 city    shard [person] "Somebody said back in five. That was a week ago." - Arroyo, south side
+ 76 city    shard [person] "NetWatch blacked out a camera feed from here. Wonder why." - Arroyo, south side
+ 77 city    shard [person] "Rent's overdue on a place out this way. Landlord stopped knocking." - Arroyo, north side
+ 78 city    shard [person] "Something happened here. Go look before the scavs do." - West Wind Estate, near the middle
+ 79 city    shard [person] "A street doc lost a patient around here. Not on the table." - West Wind Estate, east side
+ 80 city    shard [person] "Somebody went looking for trouble out this way and found it." - West Wind Estate, south-east side
+ 81 city    shard [person] "Lights on, music playing, nobody home. Been like that for days." - West Wind Estate, south side
+ 82 city    shard [person] "A runner went dark mid-job somewhere around here." - West Wind Estate, south-west side
+ 83 city    shard [person] "Gang tags got painted over here overnight. Fresh paint, old problem." - West Wind Estate, north-east side, down low
+ 84 city    shard [person] "Someone keeps leaving flowers at this spot. Nobody knows who for." - West Wind Estate, north side
+ 85 city    shard [person] "A corpo came slumming out this way and didn't make the next meeting." - Coastview, near the middle, down low
+ 86 city    shard [person] "Last anyone heard, they were headed this way with a bad plan." - Coastview, east side, up high
+ 87 city    shard [person] "The bodega owner saw something here. Now he sees nothing." - Coastview, south side
+ 88 city    shard [person] "Somebody's chrome showed up for sale. Its owner didn't." - Coastview, south side
+ 89 city    shard [person] "A delivery never got signed for out here." - Coastview, west side, down low
+ 90 city    shard [person] "Quiet spot. Too quiet, since last week." - Coastview, north-east side
+ 91 city    shard [person] "Two people walked in here. The cameras only saw one walk out." - Coastview, north-east side, up high
+ 92 city    shard [person] "Somebody tried to disappear here. Maybe it worked." - Coastview, east side, up high
+ 93 city    shard [person] "Word is someone got in over their head right about here." - Coastview, east side, up high
+ 94 city    shard [person] "Somebody's last message was sent from this spot. Just one word." - Coastview, north-west side, down low
+ 95 city    shard [person] "A fixer stopped asking about this place. That's never good." - Coastview, north-west side, down low
+ 96 city    shard [person] "Somebody stopped answering their holo. Last ping came from around here." - The Glen, south side
+ 97 city    shard [stash] "Somebody paid good eddies to keep this spot forgotten." - The Badlands, east side, up high
+ 98 city    shard [person] "Something happened here. Nobody's saying what." - The Badlands, north-east side, down low
+ 99 city    shard [stash] "Word is somebody hid something here and never came back for it." - The Badlands, north-east side
+100 city    shard [person] "A choom stepped out for a smoke and never stepped back in." - The Badlands, north-east side
+101 city    shard [person] "Heard a scream out this way last week. NCPD never showed." - The Badlands, north-east side, up high
+102 city    shard [person] "Flies have been circling this spot for days. Just saying." - The Badlands, north-east side, up high
+103 city    shard [person] "Somebody's mother keeps posting the same face. Last seen around here." - The Badlands, north-east side, down low
+104 city    shard [person] "Funny smell out this way. Locals walk the long way round now." - The Badlands, north-east side, up high
+105 city    shard [person] "A debt went unpaid. The collector was last seen here." - The Badlands, east side, up high
+106 city    shard [stash] "A dead drop out this way went cold. Contents still inside, maybe." - The Badlands, north-east side
+107 city    shard [person] "Stray dogs won't stop barking at this place. Dogs know things." - The Badlands, north-east side, up high
+108 city    shard [person] "Somebody left here in a hurry. Door's still open." - The Badlands, north-east side, up high
+109 city    shard [person] "Missing-person flyers keep getting torn down around here. Who's tearing them?" - The Badlands, north-east side, up high
+110 city    shard [person] "Trauma Team got a ping from here. Contract had lapsed. Nobody went." - The Badlands, north side, down low
+111 city    shard [person] "Two shots out this way, then nothing. That was days ago." - The Badlands, north-east side, up high
+112 city    shard [person] "A gig went sideways here. The runner never cashed out." - The Badlands, north-east side
+113 city    shard [stash] "Somebody's rainy-day stash is around here. It's raining, V." - The Badlands, north-east side, down low
+114 city    shard [person] "Somebody's agent keeps ringing from this spot. Nobody picks up." - The Badlands, north-east side, down low
+115 city    shard [person] "A scav van idled here all night. Then it didn't." - The Badlands, north side, down low
+116 city    shard [person] "Kid on the corner swears a ghost lives here. Kids say a lot." - The Badlands, north-east side
+117 city    shard [person] "Somebody owed somebody. This is where they last met." - The Badlands, north-east side, up high
+118 city    shard [person] "A lovers' quarrel out this way. Only one of them walked home." - The Badlands, west side, down low
+119 city    shard [person] "Somebody said back in five. That was a week ago." - The Badlands, south-west side
+120 city    area  [person] "NetWatch blacked out a camera feed from here. Wonder why." - The Badlands, near the middle, down low
+121 city    shard [person] "Rent's overdue on a place out this way. Landlord stopped knocking." - The Badlands, south-west side
+122 city    shard [person] "Something happened here. Go look before the scavs do." - The Badlands, south-west side, down low
+123 city    shard [person] "A street doc lost a patient around here. Not on the table." - The Badlands, south-west side
+124 city    shard [person] "Somebody went looking for trouble out this way and found it." - The Badlands, south-west side
+125 city    shard [person] "Lights on, music playing, nobody home. Been like that for days." - The Badlands, west side
+126 city    shard [person] "A runner went dark mid-job somewhere around here." - The Badlands, south-west side, up high
+127 city    shard [person] "Gang tags got painted over here overnight. Fresh paint, old problem." - The Badlands, south-west side, down low
+128 city    shard [person] "Someone keeps leaving flowers at this spot. Nobody knows who for." - The Badlands, south side, down low
+129 city    shard [person] "A corpo came slumming out this way and didn't make the next meeting." - The Badlands, west side
+130 city    shard [stash] "An old smuggler's chalk mark showed up here. Means goods inside." - The Badlands, south-west side
+131 city    shard [person] "Last anyone heard, they were headed this way with a bad plan." - The Badlands, south-west side, down low
+132 city    shard [person] "The bodega owner saw something here. Now he sees nothing." - The Badlands, south-west side
+133 city    shard [person] "Somebody's chrome showed up for sale. Its owner didn't." - The Badlands, south-west side
+134 city    shard [person] "A delivery never got signed for out here." - The Badlands, south-west side, up high
+135 city    shard [person] "Quiet spot. Too quiet, since last week." - The Badlands, south-west side
+136 city    shard [stash] "A courier dumped a package here when the heat came down." - The Badlands, south-west side
+137 city    shard [person] "Two people walked in here. The cameras only saw one walk out." - The Badlands, south-west side, up high
+138 city    shard [person] "Somebody tried to disappear here. Maybe it worked." - The Badlands, south-west side
+139 city    shard [person] "Word is someone got in over their head right about here." - The Badlands, west side, down low
+140 city    shard [person] "Somebody's last message was sent from this spot. Just one word." - The Badlands, south-west side
+141 city    shard [person] "A fixer stopped asking about this place. That's never good." - Vista del Rey, north-east side
+142 city    shard [person] "Somebody stopped answering their holo. Last ping came from around here." - Vista del Rey, north side
+143 city    shard [person] "Something happened here. Nobody's saying what." - Vista del Rey, north side
+144 city    shard [person] "A choom stepped out for a smoke and never stepped back in." - Vista del Rey, north-east side
+145 city    shard [person] "Heard a scream out this way last week. NCPD never showed." - Vista del Rey, south side
+146 city    shard [person] "Flies have been circling this spot for days. Just saying." - Vista del Rey, south-west side
+147 city    shard [person] "Somebody's mother keeps posting the same face. Last seen around here." - Vista del Rey, south side
+148 city    shard [person] "Funny smell out this way. Locals walk the long way round now." - Vista del Rey, south-west side
+149 city    shard [person] "A debt went unpaid. The collector was last seen here." - Vista del Rey, north-west side
+150 city    shard [person] "Stray dogs won't stop barking at this place. Dogs know things." - The Glen, south side, up high
+151 city    shard [person] "Somebody left here in a hurry. Door's still open." - The Glen, north side
+152 city    shard [person] "Missing-person flyers keep getting torn down around here. Who's tearing them?" - The Glen, north side
+153 city    shard [person] "Trauma Team got a ping from here. Contract had lapsed. Nobody went." - The Glen, near the middle
+154 city    shard [person] "Two shots out this way, then nothing. That was days ago." - The Glen, north side
+155 city    shard [person] "A gig went sideways here. The runner never cashed out." - The Glen, west side
+156 city    shard [person] "Somebody's agent keeps ringing from this spot. Nobody picks up." - The Glen, south-east side
+157 city    shard [person] "A scav van idled here all night. Then it didn't." - The Glen, south-west side
+158 city    shard [stash] "Something's tucked away out this way. Finders keepers." - The Glen, south-west side
+159 city    shard [person] "Kid on the corner swears a ghost lives here. Kids say a lot." - The Glen, south-west side
+160 city    shard [person] "Somebody owed somebody. This is where they last met." - Wellsprings, north side
+161 city    shard [person] "A lovers' quarrel out this way. Only one of them walked home." - Wellsprings, north-west side
+162 city    shard [person] "Somebody said back in five. That was a week ago." - Wellsprings, near the middle
+163 city    shard [person] "NetWatch blacked out a camera feed from here. Wonder why." - Wellsprings, west side
+164 city    shard [person] "Rent's overdue on a place out this way. Landlord stopped knocking." - Wellsprings, south side
+165 city    shard [stash] "A crew split a score here and one share never got collected." - Wellsprings, south-east side
+166 city    shard [person] "Something happened here. Go look before the scavs do." - Wellsprings, south-east side
+167 city    shard [person] "A street doc lost a patient around here. Not on the table." - Wellsprings, south-east side
+168 city    shard [person] "Somebody went looking for trouble out this way and found it." - Wellsprings, south-east side
+169 city    shard [person] "Lights on, music playing, nobody home. Been like that for days." - The Glen, north-east side
+170 city    shard [person] "A runner went dark mid-job somewhere around here." - Downtown, east side
+171 city    shard [person] "Gang tags got painted over here overnight. Fresh paint, old problem." - Downtown, north-east side
+172 city    shard [person] "Someone keeps leaving flowers at this spot. Nobody knows who for." - Downtown, north-east side
+173 city    shard [person] "A corpo came slumming out this way and didn't make the next meeting." - Downtown, north-east side
+174 city    area  [person] "Last anyone heard, they were headed this way with a bad plan." - Downtown, near the middle
+175 city    shard [person] "The bodega owner saw something here. Now he sees nothing." - Downtown, west side
+176 city    shard [person] "Somebody's chrome showed up for sale. Its owner didn't." - Downtown, north-west side
+177 city    shard [person] "A delivery never got signed for out here." - Downtown, near the middle
+178 city    shard [person] "Quiet spot. Too quiet, since last week." - Downtown, south-west side
+179 city    shard [person] "Two people walked in here. The cameras only saw one walk out." - Downtown, south-west side, down low
+180 city    area  [stash] "Somebody paid good eddies to keep this spot forgotten." - Downtown, west side
+181 city    shard [person] "Somebody tried to disappear here. Maybe it worked." - Corpo Plaza, north-east side, up high
+182 city    shard [person] "Word is someone got in over their head right about here." - Corpo Plaza, north-east side, down low
+183 city    area  [person] "Somebody's last message was sent from this spot. Just one word." - The Glen, north-east side
+184 city    shard [person] "A fixer stopped asking about this place. That's never good." - Corpo Plaza, south side, up high
+185 city    shard [person] "Somebody stopped answering their holo. Last ping came from around here." - Corpo Plaza, west side
+186 city    shard [person] "Something happened here. Nobody's saying what." - Corpo Plaza, south-west side, down low
+187 city    shard [person] "A choom stepped out for a smoke and never stepped back in." - Corpo Plaza, north-east side
+188 city    shard [person] "Heard a scream out this way last week. NCPD never showed." - Corpo Plaza, near the middle
+189 city    shard [person] "Flies have been circling this spot for days. Just saying." - Corpo Plaza, north side
+190 city    shard [person] "Somebody's mother keeps posting the same face. Last seen around here." - North Oak, west side
+191 city    shard [person] "Funny smell out this way. Locals walk the long way round now." - North Oak, north-west side, down low
+192 city    shard [person] "A debt went unpaid. The collector was last seen here." - North Oak, east side, up high
+193 city    shard [person] "Stray dogs won't stop barking at this place. Dogs know things." - The Badlands, near the middle, up high
+194 city    area  [stash] "Word is somebody hid something here and never came back for it." - Kabuki, north side
+195 dogtown shard [place] "Somebody set up a nice little corner here before the Barghest moved in. Wonder how it ended." - Dogtown, west side, down low
+196 dogtown mail  [place] "Kurt's people keep walking past this spot without looking at it. On purpose." - Dogtown, west side, down low
+197 dogtown shard [place] "A squatter swears this place used to be somebody's whole world." - Dogtown, west side, down low
+198 dogtown shard [place] "Somebody spent a lot of nights up here. You can tell by the view." - Dogtown, west side, down low
+199 dogtown fact  [weapon] "A piece with a reputation is lying around out here. Its owner doesn't need it anymore." - Dogtown, west side, down low
+200 dogtown shard [place] "The stadium crowd talks about this spot in a whisper. Go see why." - Dogtown, west side, down low
+201 dogtown shard [place] "A Barghest patrol cleared this place out. They missed something." - Dogtown, north side, down low
+202 dogtown shard [place] "There's a story behind this spot. Nobody in Dogtown tells it the same way twice." - Dogtown, near the middle, down low
+203 dogtown shard [place] "Smugglers used to meet out this way. One of them left in a hurry." - Dogtown, south-east side, up high
+204 dogtown area  [place] "Light's still on out here, every night. Nobody's paying for it." - Dogtown, east side, up high
+205 dogtown shard [place] "Somebody wrote it all down and left it here. Dogtown doesn't read." - Dogtown, south-west side, up high
+206 dogtown fact  [weapon] "Collectors in the Black Market keep asking about this spot. Get there first." - Dogtown, near the middle, down low
+207 dogtown mail  [place] "Somebody set up a nice little corner here before the Barghest moved in. Wonder how it ended." - Dogtown, west side, down low
+208 dogtown shard [person] "Somebody left here in a hurry. Door's still open." - Dogtown, north side, down low
+209 dogtown shard [place] "Kurt's people keep walking past this spot without looking at it. On purpose." - Dogtown, north-east side, down low
+210 dogtown area  [place] "A squatter swears this place used to be somebody's whole world." - Dogtown, north-east side, down low
+211 dogtown fact  [weapon] "Somebody's prized iron went quiet around here. Iron like that never stays lost." - Dogtown, north-east side
+212 dogtown shard [place] "Somebody spent a lot of nights up here. You can tell by the view." - Dogtown, north-east side
+213 dogtown area  [place] "The stadium crowd talks about this spot in a whisper. Go see why." - Dogtown, north-east side, up high
+214 dogtown shard [place] "A Barghest patrol cleared this place out. They missed something." - Dogtown, north-east side
+215 dogtown shard [place] "There's a story behind this spot. Nobody in Dogtown tells it the same way twice." - Dogtown, north-east side
+216 dogtown shard [place] "Smugglers used to meet out this way. One of them left in a hurry." - Dogtown, east side, up high
+217 dogtown area  [place] "Light's still on out here, every night. Nobody's paying for it." - Dogtown, east side, up high
+218 dogtown shard [place] "Somebody wrote it all down and left it here. Dogtown doesn't read." - Dogtown, east side
+219 dogtown shard [place] "Somebody set up a nice little corner here before the Barghest moved in. Wonder how it ended." - Dogtown, east side, up high
+220 dogtown mail  [place] "Kurt's people keep walking past this spot without looking at it. On purpose." - Dogtown, south-east side
+221 dogtown shard [person] "Missing-person flyers keep getting torn down around here. Who's tearing them?" - Dogtown, south-west side, up high
+222 dogtown shard [person] "Trauma Team got a ping from here. Contract had lapsed. Nobody went." - Dogtown, south-west side, up high
+223 dogtown shard [person] "Two shots out this way, then nothing. That was days ago." - Dogtown, east side, up high
+224 dogtown shard [person] "A gig went sideways here. The runner never cashed out." - Dogtown, south side, up high
+225 dogtown shard [person] "Somebody's agent keeps ringing from this spot. Nobody picks up." - Dogtown, east side, up high
+226 dogtown shard [person] "A scav van idled here all night. Then it didn't." - Dogtown, near the middle
+227 dogtown shard [person] "Kid on the corner swears a ghost lives here. Kids say a lot." - Dogtown, north-west side, down low
+228 dogtown shard [place] "A squatter swears this place used to be somebody's whole world." - Dogtown, south-west side
+229 dogtown mail  [place] "Somebody spent a lot of nights up here. You can tell by the view." - Dogtown, south-west side, down low
+230 dogtown shard [person] "Somebody owed somebody. This is where they last met." - Dogtown, north-east side, down low
+231 dogtown shard [place] "The stadium crowd talks about this spot in a whisper. Go see why." - Dogtown, south-west side, up high
+232 dogtown shard [place] "A Barghest patrol cleared this place out. They missed something." - Dogtown, west side, down low
+233 dogtown shard [place] "There's a story behind this spot. Nobody in Dogtown tells it the same way twice." - Dogtown, west side, down low
+234 dogtown shard [person] "A lovers' quarrel out this way. Only one of them walked home." - Dogtown, west side, down low
+235 dogtown area  [place] "Smugglers used to meet out this way. One of them left in a hurry." - Dogtown, north-east side, up high
+236 dogtown shard [place] "Light's still on out here, every night. Nobody's paying for it." - Dogtown, south-east side
+237 dogtown shard [place] "Somebody wrote it all down and left it here. Dogtown doesn't read." - Dogtown, east side
+238 dogtown shard [person] "Somebody said back in five. That was a week ago." - Dogtown, north-east side, down low
+239 dogtown shard [person] "NetWatch blacked out a camera feed from here. Wonder why." - Dogtown, south-west side, up high
+240 dogtown fact  [weapon] "A legend in Dogtown, they say. Not a person. A weapon." - Dogtown, west side, down low
