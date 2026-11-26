@@ -7,8 +7,8 @@ Night City is full of hidden gems: a body nobody reported, a stash nobody came b
 
 [size=4][b]Features[/b][/size]
 [list]
-[*][b]NETdir://nc.whispers[/b] - open it on any computer. Three new whispers per game day (posted on your first visit that day). About a third are tip-locked: pay 25 eddies to hear them. [b]Ask around[/b] for one extra whisper any time (50 eddies).
-[*][b]Map pins only for what you've heard about[/b]. Hidden gems stay hidden until a whisper reveals them. The pin's tooltip shows the rumour and the place.
+[*][b]NETdir://nc.whispers[/b] - open it on any computer. Three new whispers per game day (posted on your first visit that day), each behind its own tip (50-300 eddies, fixed once posted). [b]Ask around[/b] for one extra whisper any time: 100 eddies, doubling with every ask, back to 100 a game day after your first ask. A second tab lists every whisper still out there, page by page.
+[*][b]Map pins only for what you've heard about[/b], shown as the game's own "?" icon. Hidden gems stay hidden until a whisper reveals them. The pin's tooltip shows the rumour and the place.
 [*][b]The street talks[/b]: when you enter a district or step out of a vehicle, there is a 20 % chance that the nearest hidden gem within 250 m gets revealed ("something happened near here"). At most once per game hour.
 [*][b]Closing a case[/b]:
 [list]
@@ -23,7 +23,7 @@ Night City is full of hidden gems: a body nobody reported, a stash nobody came b
 [/list]
 
 [size=4][b]Settings (Mod Settings, optional)[/b][/size]
-Esc > Mods > Whispers of Night City: whispers per day (0-5), tip-lock chance, tip and ask-around prices, street chance / radius / hours between rolls, Dogtown gems on/off, rewards on/off and payout amounts. Without Mod Settings everything runs on the defaults above.
+Esc > Mods > Whispers of Night City: whispers per day (0-5), lowest / highest whisper price, ask-around start price and reset hours, street chance / radius / hours between rolls, Dogtown gems on/off, rewards on/off and payout amounts. Without Mod Settings everything runs on the defaults above.
 
 [size=4][b]Requirements[/b][/size]
 [list]

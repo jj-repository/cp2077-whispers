@@ -12,9 +12,12 @@ ArchiveXL not needed (the site art archive only adds its own files). Compiles cl
 (Nexus 12245): same gems, they would pin and pay them twice. Remove them. Progress from them carries over (below).
 
 ## How it plays
-- **Website** (any computer, `NETdir://nc.whispers`): N whispers per game day, posted on the first visit that day
-  (default 3, about a third tip-locked: 25 eddies to unlock). "Ask around" = one extra whisper for 50. A list of
-  whispers still out there, cases closed, next payout.
+- **Website** (any computer, `NETdir://nc.whispers`), two tabs. TODAY: N whispers per game day (default 3), posted on
+  the first visit that day, each behind its own tip (rolled once, 50-300 eddies, saved); "Ask around" = one extra
+  whisper, 100 doubling per ask, back to 100 24 game hours after the first ask. STILL OUT THERE: every open whisper,
+  newest first, 4 per page. Cases closed + next payout.
+- **Map pins**: the game's own "?" icon (part `undiscovered` of `mappin_icons.inkatlas`), set by wrapping the world map /
+  minimap / in-world quest pin controllers' `UpdateIcon` for pins whose caption starts with `WhispersNC|`.
 - **The street**: entering a district or stepping out of a vehicle rolls once (20 %) for the nearest hidden gem within
   250 m that is not on the map yet; at most one roll per game hour.
 - **Closing a case**: shard gems close when the shard lands in your journal (any time, revealed or not); Dogtown mail
@@ -51,8 +54,8 @@ ArchiveXL not needed (the site art archive only adds its own files). Compiles cl
   the structure with our three parts, `pack`, then segment / CRC / Oodle checks. Needs WolvenKit CLI + the game.
 
 ## State (facts)
-`wnc_r<id>` reveal order, `wnc_d<id>` 1 closed / 3 gone, `wnc_rseq`, `wnc_day`, `wnc_post1..5` / `wnc_lk1..5` (today's
-whispers, tip-locked), `wnc_ptime` (last street roll), `wnc_tier`, `wnc_all`, `wnc_init`. First load: Missing Persons
+`wnc_r<id>` reveal order, `wnc_d<id>` 1 closed / 3 gone, `wnc_rseq`, `wnc_day`, `wnc_post1..5` / `wnc_lk1..5` / `wnc_pp1..5` (today's
+whispers, locked, tip price), `wnc_askn` / `wnc_askt` (ask-around count / window start), `wnc_ptime` (last street roll), `wnc_tier`, `wnc_all`, `wnc_init`. First load: Missing Persons
 `dark_hg_g<id>` / Pacifica Typhoon `dark_pt_g<id>` progress is read once (same gem order).
 
 ## Canary

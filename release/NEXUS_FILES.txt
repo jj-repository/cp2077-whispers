@@ -21,7 +21,7 @@ Optional: Mod Settings (settings menu; without it: defaults)
 Incompatible: Missing Persons - Fixer's Hidden Gems, Pacifica Typhoon - Dogtown's Hidden Gems (same gems; remove them, progress carries over)
 
 FILES (name / category / description)
-1. Whispers of Night City  |  Main file  |  WhispersOfNightCity_v0.1.1.zip
+1. Whispers of Night City  |  Main file  |  WhispersOfNightCity_v0.1.2.zip
 The mod, one download: the website NETdir://nc.whispers, map pins, the street rolls, rewards, the settings menu (with Mod Settings). Needs RED4ext, redscript, Codeware, Browser Extension.
 
 PERMISSIONS (suggestion)

@@ -20,32 +20,42 @@ public class WNCModSettings extends ScriptableService {
   @runtimeProperty("ModSettings.mod", "Whispers of Night City")
   @runtimeProperty("ModSettings.category", "Website")
   @runtimeProperty("ModSettings.category.order", "0")
-  @runtimeProperty("ModSettings.displayName", "Tip-locked whispers (%)")
-  @runtimeProperty("ModSettings.description", "Chance that a daily whisper only shows after you pay a tip.")
+  @runtimeProperty("ModSettings.displayName", "Whisper price: lowest")
+  @runtimeProperty("ModSettings.description", "Every daily whisper costs a tip, rolled once per whisper between the lowest and the highest price.")
+  @runtimeProperty("ModSettings.step", "10")
+  @runtimeProperty("ModSettings.min", "0")
+  @runtimeProperty("ModSettings.max", "5000")
+  public let priceMin: Int32 = 50;
+
+  @runtimeProperty("ModSettings.mod", "Whispers of Night City")
+  @runtimeProperty("ModSettings.category", "Website")
+  @runtimeProperty("ModSettings.category.order", "0")
+  @runtimeProperty("ModSettings.displayName", "Whisper price: highest")
+  @runtimeProperty("ModSettings.description", "Highest tip for a daily whisper.")
+  @runtimeProperty("ModSettings.step", "10")
+  @runtimeProperty("ModSettings.min", "0")
+  @runtimeProperty("ModSettings.max", "5000")
+  public let priceMax: Int32 = 300;
+
+  @runtimeProperty("ModSettings.mod", "Whispers of Night City")
+  @runtimeProperty("ModSettings.category", "Website")
+  @runtimeProperty("ModSettings.category.order", "0")
+  @runtimeProperty("ModSettings.displayName", "Ask around: start price")
+  @runtimeProperty("ModSettings.description", "First extra whisper costs this; every further one doubles it (100, 200, 400 ...).")
+  @runtimeProperty("ModSettings.step", "10")
+  @runtimeProperty("ModSettings.min", "0")
+  @runtimeProperty("ModSettings.max", "5000")
+  public let askStart: Int32 = 100;
+
+  @runtimeProperty("ModSettings.mod", "Whispers of Night City")
+  @runtimeProperty("ModSettings.category", "Website")
+  @runtimeProperty("ModSettings.category.order", "0")
+  @runtimeProperty("ModSettings.displayName", "Ask around: reset after (game hours)")
+  @runtimeProperty("ModSettings.description", "The doubling resets to the start price this many game hours after the first ask.")
   @runtimeProperty("ModSettings.step", "1")
-  @runtimeProperty("ModSettings.min", "0")
-  @runtimeProperty("ModSettings.max", "100")
-  public let lockPct: Int32 = 34;
-
-  @runtimeProperty("ModSettings.mod", "Whispers of Night City")
-  @runtimeProperty("ModSettings.category", "Website")
-  @runtimeProperty("ModSettings.category.order", "0")
-  @runtimeProperty("ModSettings.displayName", "Tip to unlock a whisper")
-  @runtimeProperty("ModSettings.description", "Eddies to unlock a tip-locked daily whisper.")
-  @runtimeProperty("ModSettings.step", "5")
-  @runtimeProperty("ModSettings.min", "0")
-  @runtimeProperty("ModSettings.max", "1000")
-  public let unlockPrice: Int32 = 25;
-
-  @runtimeProperty("ModSettings.mod", "Whispers of Night City")
-  @runtimeProperty("ModSettings.category", "Website")
-  @runtimeProperty("ModSettings.category.order", "0")
-  @runtimeProperty("ModSettings.displayName", "Ask around (price)")
-  @runtimeProperty("ModSettings.description", "Eddies for one extra whisper, any time.")
-  @runtimeProperty("ModSettings.step", "5")
-  @runtimeProperty("ModSettings.min", "0")
-  @runtimeProperty("ModSettings.max", "1000")
-  public let askPrice: Int32 = 50;
+  @runtimeProperty("ModSettings.min", "1")
+  @runtimeProperty("ModSettings.max", "168")
+  public let askResetHours: Int32 = 24;
 
   @runtimeProperty("ModSettings.mod", "Whispers of Night City")
   @runtimeProperty("ModSettings.category", "Street")
@@ -120,9 +130,10 @@ public class WNCModSettings extends ScriptableService {
 // read at use, clamped; defaults when the service is missing
 public abstract class WNCCfg {
   public static func Daily() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Clamp(s.daily, 0, 5) : 3; }
-  public static func LockPct() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Clamp(s.lockPct, 0, 100) : 34; }
-  public static func Unlock() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Max(s.unlockPrice, 0) : 25; }
-  public static func Ask() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Max(s.askPrice, 0) : 50; }
+  public static func PriceMin() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Max(s.priceMin, 0) : 50; }
+  public static func PriceMax() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Max(s.priceMax, 0) : 300; }
+  public static func AskStart() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Max(s.askStart, 0) : 100; }
+  public static func AskResetSeconds() -> Int32 { let s = WNCModSettings.Get(); return 3600 * (IsDefined(s) ? Clamp(s.askResetHours, 1, 168) : 24); }
   public static func NearPct() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Clamp(s.nearPct, 0, 100) : 20; }
   public static func NearRadius() -> Float { let s = WNCModSettings.Get(); return Cast<Float>(IsDefined(s) ? Clamp(s.nearRadius, 50, 1000) : 250); }
   public static func NearSeconds() -> Int32 { let s = WNCModSettings.Get(); return 3600 * (IsDefined(s) ? Clamp(s.nearHours, 0, 24) : 1); }

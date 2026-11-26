@@ -461,33 +461,77 @@ public class WNCSystem extends ScriptableSystem {
       let ks = IntToString(k);
       WNC.SetF("wnc_post" + ks, 0);
       WNC.SetF("wnc_lk" + ks, 0);
+      WNC.SetF("wnc_pp" + ks, 0);
       if k <= WNCCfg.Daily() {
         let id = this.PickRandom();
         WNC.SetF("wnc_post" + ks, id);
-        if id > 0 {
-          if RandRange(0, 100) < WNCCfg.LockPct() { WNC.SetF("wnc_lk" + ks, 1); } else { this.Reveal(id); }
-        }
+        if id > 0 { WNC.SetF("wnc_lk" + ks, 1); } // 0.1.2: every daily whisper is paid
       }
       k += 1;
     }
+  }
+
+  // price of a locked post: rolled once in [min, max], saved (fact wnc_pp<k>); 0.1.1 posts get theirs on first look
+  public func PostPrice(k: Int32) -> Int32 {
+    let key = "wnc_pp" + IntToString(k);
+    let p = WNC.F(key);
+    if p <= 0 {
+      let lo = WNCCfg.PriceMin();
+      p = RandRange(lo, Max(lo, WNCCfg.PriceMax()) + 1);
+      p = Max(p, 1);
+      WNC.SetF(key, p);
+    }
+    return p;
   }
 
   public func UnlockPost(k: Int32) -> String {
     let ks = IntToString(k);
     let id = WNC.F("wnc_post" + ks);
     if id <= 0 || WNC.F("wnc_lk" + ks) == 0 { return ""; }
-    if !WNC.Pay(WNCCfg.Unlock()) { return "Not enough eddies for the tip (" + WNC.Eddies(WNCCfg.Unlock()) + ")."; }
+    let price = this.PostPrice(k);
+    if !WNC.Pay(price) { return "Not enough eddies for the tip (" + WNC.Eddies(price) + ")."; }
     WNC.SetF("wnc_lk" + ks, 0);
     this.Reveal(id);
     return "Tip paid. The whisper is on your map.";
   }
 
+  // ask around: start price, doubled per use; the window opens at the first use and resets after N game hours
+  public func AskPrice() -> Int32 {
+    let n = WNC.F("wnc_askn");
+    if n > 0 && WNC.Now() - WNC.F("wnc_askt") >= WNCCfg.AskResetSeconds() { n = 0; }
+    let p = WNCCfg.AskStart();
+    while n > 0 && p < 100000000 { p *= 2; n -= 1; }
+    return p;
+  }
+
   public func Ask() -> String {
     let id = this.PickRandom();
     if id == 0 { return "Nobody's talking right now. Nothing new on the street."; }
-    if !WNC.Pay(WNCCfg.Ask()) { return "Not enough eddies for the tip (" + WNC.Eddies(WNCCfg.Ask()) + ")."; }
+    let price = this.AskPrice();
+    if !WNC.Pay(price) { return "Not enough eddies for the tip (" + WNC.Eddies(price) + ")."; }
+    let n = WNC.F("wnc_askn");
+    if n == 0 || WNC.Now() - WNC.F("wnc_askt") >= WNCCfg.AskResetSeconds() { n = 0; WNC.SetF("wnc_askt", WNC.Now()); }
+    WNC.SetF("wnc_askn", n + 1);
     this.Reveal(id);
     return "\"" + this.Line(id) + "\" - " + this.Loc(id) + "  (on your map)";
+  }
+
+  // revealed + open gems, newest first
+  public func OpenList() -> array<Int32> {
+    let ids: array<Int32>;
+    let seqs: array<Int32>;
+    let i = 1;
+    while i <= this.Count() {
+      if this.OnMap(i) {
+        let q = WNC.F("wnc_r" + IntToString(i));
+        let at = 0; // insertion sort, newest first (a few dozen entries at most)
+        while at < ArraySize(seqs) && seqs[at] > q { at += 1; }
+        ArrayInsert(ids, at, i);
+        ArrayInsert(seqs, at, q);
+      }
+      i += 1;
+    }
+    return ids;
   }
 
   // ---- counts + rewards
@@ -574,6 +618,35 @@ public final func GetMailWidget(documentAdress: SDocumentAdress) -> SDocumentWid
     if IsDefined(s) { s.CloseByKey(3, w.title); }
   }
   return w;
+}
+
+// pin icon: the game's own plain "?" (part "undiscovered" of base\gameplay\gui\common\icons\mappin_icons.inkatlas, the atlas
+// every quest / gig pin icon comes from) instead of the quest-giver icon. Our pins are found by their caption; the
+// mappin type / variant stay QuestStaticMappinDefinition + QuestGiverVariant (a variant the type allows).
+public func WNC_IsOurPin(m: wref<IMappin>) -> Bool = IsDefined(m) && StrBeginsWith(m.GetDisplayName(), "WhispersNC|")
+
+@wrapMethod(BaseWorldMapMappinController)
+protected func UpdateIcon() -> Void {
+  wrappedMethod();
+  if WNC_IsOurPin(this.m_mappin) { inkImageRef.SetTexturePart(this.iconWidget, n"undiscovered"); }
+}
+
+@wrapMethod(MinimapQuestMappinController)
+protected final func UpdateIcon() -> Void {
+  wrappedMethod();
+  if WNC_IsOurPin(this.m_questMappin) { inkImageRef.SetTexturePart(this.iconWidget, n"undiscovered"); }
+}
+
+@wrapMethod(MinimapPOIMappinController)
+protected final func UpdateIcon() -> Void {
+  wrappedMethod();
+  if WNC_IsOurPin(this.m_mappin) { inkImageRef.SetTexturePart(this.iconWidget, n"undiscovered"); }
+}
+
+@wrapMethod(QuestMappinController)
+protected func UpdateIcon() -> Void {
+  wrappedMethod();
+  if WNC_IsOurPin(this.m_mappin) { inkImageRef.SetTexturePart(this.iconWidget, n"undiscovered"); }
 }
 
 // world map tooltip of our pins: "WhispersNC|<title>|<text>" in the pin's caption

@@ -1,3 +1,14 @@
+0.1.2
+- Website readable: everything bigger, the place line light on dark instead of dark grey. Two tabs: TODAY (the day's
+  whispers + ask around) and STILL OUT THERE (every open whisper, newest first, 4 per page with NEWER / OLDER), so
+  nothing runs off the bottom of the page. Smaller header picture.
+- Prices: every daily whisper is now paid, each its own tip, rolled once between 50 and 300 eddies and saved with the
+  game. Ask around starts at 100 and doubles with every ask (100, 200, 400 ...); 24 game hours after the first ask it
+  is back to 100. The button shows the current price. Whispers already posted free in 0.1.1 stay free.
+- Settings: whisper price lowest / highest, ask around start price, ask around reset (game hours). The old tip-lock
+  chance / fixed prices are gone.
+- Map pins are the game's own "?" (undiscovered) icon instead of the quest-giver icon, on the world map, the minimap
+  and in the world.
 0.1.1
 - City gems open right after the first mission ("The Rescue", vanilla fact q001_mission0_complete) instead of
   later in Act 1. Saves already past that point see them at once.
