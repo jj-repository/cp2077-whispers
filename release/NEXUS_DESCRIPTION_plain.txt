@@ -1,0 +1,80 @@
+WHISPERS OF NIGHT CITY
+Street talk, overheard and resold. Every whisper marks a spot on your map.
+
+Night City is full of hidden gems: a body nobody reported, a stash nobody came back for, a drone that fell out of the sky. This mod turns all of them into street rumours. A website posts a few whispers every day, each one a pin on your map with a vague line and a rough location. Go there, find out what happened, close the case.
+
+194 hidden gems in the city, plus 46 in Dogtown with Phantom Liberty.
+
+
+FEATURES
+
+The website
+- Open NETdir://nc.whispers on any computer.
+- Three new whispers every game day, each behind its own tip (50-300 eddies).
+- "Ask around" for an extra whisper any time: 100 eddies, doubling with every ask, back to 100 one game day after your first ask.
+- A second tab lists every whisper still out there.
+
+The map
+- Only gems you've heard about get a pin, shown as a "?" icon.
+- Hover the pin to read the rumour and the place.
+
+The street talks
+- Entering a district or stepping out of a vehicle has a 20% chance to reveal the nearest hidden gem within 250 m. At most once per game hour.
+
+Closing a case
+- Shard gems: pick up and read the shard.
+- Dogtown mail gems: open the mail on the computer.
+- Dogtown iconic weapons: pick up the weapon.
+- Spot gems (no shard): at the revealed spot, pick something up, step out of a vehicle or enter the district there. Just walking past doesn't count.
+
+Rewards
+- Every 10 closed cases: crafting components + 150 eddies.
+- Close them all: 3000 eddies, legendary components and Comrade's Hammer.
+
+Fair gates
+- City gems unlock after "The Rescue" (Watson first, the rest after The Heist).
+- Dogtown gems unlock once Dogtown opens.
+- Gems made impossible by your choices or lifepath are dropped, never counted against you.
+
+Performance
+- No timers, no polling, nothing per frame. Everything runs on game events.
+
+
+SETTINGS (Mod Settings, optional)
+Esc > Mods > Whispers of Night City
+- Whispers per day, lowest/highest whisper price
+- Ask-around start price and reset hours
+- Street reveal chance, radius and cooldown
+- Dogtown gems on/off
+- Rewards on/off and payout amounts
+Without Mod Settings everything runs on the defaults above.
+
+
+REQUIREMENTS
+- RED4ext
+- redscript
+- Codeware
+- Browser Extension
+- Optional: Mod Settings
+- Optional: Phantom Liberty (Dogtown gems, detected automatically)
+
+
+INCOMPATIBLE
+- Missing Persons - Fixer's Hidden Gems
+- Pacifica Typhoon - Dogtown's Hidden Gems
+They cover the same gems and would pin and pay them twice. Remove them before installing.
+
+Your progress carries over: on first load, gems you finished in those mods count as closed (no double payout), and open gigs show up as whispers on your map.
+
+
+INSTALL
+Extract the zip into your game folder (the one with bin, archive and r6).
+
+UNINSTALL
+Delete r6\scripts\WhispersNC\ and archive\pc\mod\WhispersNC.archive.
+The mod only stores a few quest facts in your save; they are harmless without it. Map pins are not saved, so nothing is left behind.
+
+
+NOTES
+- All rumour lines and location texts are written for this mod.
+- One gem (a shard removed from the game in 2.0) is never offered.
