@@ -147,8 +147,8 @@ public class WNCSite extends BrowserEventsListener {
     }
     let ask = WNCUI.Card(120.0, WNCUI.Red());
     WNCUI.Place(WNCUI.Text("Want more? Buy someone a drink and they'll talk.", 38, WNCUI.Cream(), false), ask, 36.0, 12.0);
-    WNCUI.Place(WNCUI.Text("Every ask costs double. Back to " + WNC.Eddies(WNCCfg.AskStart()) + " " + IntToString(WNCCfg.AskResetSeconds() / 3600) + " h after your first ask.", 32, WNCUI.Light(), false), ask, 36.0, 64.0);
-    WNCUI.PlaceRight(this.Link("[ ASK AROUND " + WNC.Eddies(s.AskPrice()) + " ]", 40, n"OnAsk", WNCUI.Red()), ask, 40.0, 36.0);
+    WNCUI.Place(WNCUI.Text("Every ask costs double, " + IntToString(WNCCfg.AskMax()) + " max. Back to " + WNC.Eddies(WNCCfg.AskStart()) + " " + IntToString(WNCCfg.AskResetSeconds() / 3600) + " h after your first ask.", 32, WNCUI.Light(), false), ask, 36.0, 64.0);
+    WNCUI.PlaceRight(this.Link(s.AskedOut() ? "[ ASKED OUT ]" : "[ ASK AROUND " + WNC.Eddies(s.AskPrice()) + " ]", 40, n"OnAsk", WNCUI.Red()), ask, 40.0, 36.0);
     ask.Reparent(wrap);
     let done = s.ClosedCount();
     WNCUI.Center(WNCUI.Text("Cases closed: " + IntToString(done) + " / " + IntToString(s.TargetCount())

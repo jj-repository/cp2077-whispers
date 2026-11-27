@@ -58,6 +58,16 @@ public class WNCModSettings extends ScriptableService {
   public let askResetHours: Int32 = 24;
 
   @runtimeProperty("ModSettings.mod", "Whispers of Night City")
+  @runtimeProperty("ModSettings.category", "Website")
+  @runtimeProperty("ModSettings.category.order", "0")
+  @runtimeProperty("ModSettings.displayName", "Ask around: max asks")
+  @runtimeProperty("ModSettings.description", "How many extra whispers you can buy before the reset.")
+  @runtimeProperty("ModSettings.step", "1")
+  @runtimeProperty("ModSettings.min", "0")
+  @runtimeProperty("ModSettings.max", "20")
+  public let askMax: Int32 = 5;
+
+  @runtimeProperty("ModSettings.mod", "Whispers of Night City")
   @runtimeProperty("ModSettings.category", "Street")
   @runtimeProperty("ModSettings.category.order", "1")
   @runtimeProperty("ModSettings.displayName", "Overheard nearby (%)")
@@ -85,7 +95,7 @@ public class WNCModSettings extends ScriptableService {
   @runtimeProperty("ModSettings.step", "1")
   @runtimeProperty("ModSettings.min", "0")
   @runtimeProperty("ModSettings.max", "24")
-  public let nearHours: Int32 = 1;
+  public let nearCooldownHours: Int32 = 12; // renamed from nearHours in 0.1.4 so saved 1 h values drop to the new default
 
   @runtimeProperty("ModSettings.mod", "Whispers of Night City")
   @runtimeProperty("ModSettings.category", "Street")
@@ -134,9 +144,10 @@ public abstract class WNCCfg {
   public static func PriceMax() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Max(s.priceMax, 0) : 300; }
   public static func AskStart() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Max(s.askStart, 0) : 100; }
   public static func AskResetSeconds() -> Int32 { let s = WNCModSettings.Get(); return 3600 * (IsDefined(s) ? Clamp(s.askResetHours, 1, 168) : 24); }
+  public static func AskMax() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Clamp(s.askMax, 0, 20) : 5; }
   public static func NearPct() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Clamp(s.nearPct, 0, 100) : 20; }
   public static func NearRadius() -> Float { let s = WNCModSettings.Get(); return Cast<Float>(IsDefined(s) ? Clamp(s.nearRadius, 50, 1000) : 250); }
-  public static func NearSeconds() -> Int32 { let s = WNCModSettings.Get(); return 3600 * (IsDefined(s) ? Clamp(s.nearHours, 0, 24) : 1); }
+  public static func NearSeconds() -> Int32 { let s = WNCModSettings.Get(); return 3600 * (IsDefined(s) ? Clamp(s.nearCooldownHours, 0, 24) : 12); }
   public static func Dogtown() -> Bool { let s = WNCModSettings.Get(); return IsDefined(s) ? s.dogtown : true; }
   public static func Rewards() -> Bool { let s = WNCModSettings.Get(); return IsDefined(s) ? s.rewards : true; }
   public static func TierPay() -> Int32 { let s = WNCModSettings.Get(); return IsDefined(s) ? Max(s.tierPay, 0) : 150; }

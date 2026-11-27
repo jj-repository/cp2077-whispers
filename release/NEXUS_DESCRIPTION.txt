@@ -7,10 +7,10 @@ Night City is full of hidden gems: a body nobody reported, a stash nobody came b
 
 [size=4][b]Features[/b][/size]
 [list]
-[*][b]NETdir://nc.whispers[/b] - open it on any computer. Three new whispers per game day (posted on your first visit that day), each behind its own tip (50-300 eddies, fixed once posted). [b]Ask around[/b] for one extra whisper any time: 100 eddies, doubling with every ask, back to 100 a game day after your first ask. A second tab lists every whisper still out there, page by page.
+[*][b]NETdir://nc.whispers[/b] - open it on any computer. Three new whispers per game day (posted on your first visit that day), each behind its own tip (50-300 eddies, fixed once posted). [b]Ask around[/b] for one extra whisper any time: 100 eddies, doubling with every ask, up to 5 asks, back to 100 a game day after your first ask. A second tab lists every whisper still out there, page by page.
 [*][b]A text from WHISPERS[/b]: at level 5, a contact called WHISPERS texts you about the website, so you find it in-game instead of from this page. The contact stays in your phone for 3 game days, read or not, then disappears. Not sent if you already opened the site.
 [*][b]Map pins only for what you've heard about[/b], shown as the game's own "?" icon. Hidden gems stay hidden until a whisper reveals them. The pin's tooltip shows the rumour and the place.
-[*][b]The street talks[/b]: when you enter a district or step out of a vehicle, there is a 20 % chance that the nearest hidden gem within 250 m gets revealed ("something happened near here"). At most once per game hour.
+[*][b]The street talks[/b]: when you enter a district or step out of a vehicle, there is a 20 % chance that the nearest hidden gem within 250 m gets revealed ("something happened near here"). At most once every 12 game hours.
 [*][b]Closing a case[/b]:
 [list]
 [*]shard gems: the shard lands in your journal (picked up any time, revealed or not, counts);

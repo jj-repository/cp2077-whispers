@@ -16,7 +16,7 @@ A text from WHISPERS
 The website
 - Open NETdir://nc.whispers on any computer.
 - Three new whispers every game day, each behind its own tip (50-300 eddies).
-- "Ask around" for an extra whisper any time: 100 eddies, doubling with every ask, back to 100 one game day after your first ask.
+- "Ask around" for an extra whisper any time: 100 eddies, doubling with every ask, up to 5 asks, back to 100 one game day after your first ask.
 - A second tab lists every whisper still out there.
 
 The map
@@ -24,7 +24,7 @@ The map
 - Hover the pin to read the rumour and the place.
 
 The street talks
-- Entering a district or stepping out of a vehicle has a 20% chance to reveal the nearest hidden gem within 250 m. At most once per game hour.
+- Entering a district or stepping out of a vehicle has a 20% chance to reveal the nearest hidden gem within 250 m. At most once every 12 game hours.
 
 Closing a case
 - Shard gems: pick up and read the shard.

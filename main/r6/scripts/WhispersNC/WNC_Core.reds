@@ -3,7 +3,7 @@
 //  - map pins stay hidden until a gem is REVEALED (fact wnc_r<id> = reveal order) by
 //      * the website NETdir://nc.whispers (WNC_Site.reds): a few whispers per game day, some tip-locked, "ask around";
 //      * the street: entering a district / stepping out of a vehicle rolls once for the nearest eligible hidden gem
-//        within the radius, at most once per game hour.
+//        within the radius, at most once per 12 game hours (setting).
 //  - a gem is CLOSED (fact wnc_d<id> = 1; 3 = gone for good) by
 //      * shard gems: the shard's journal entry turning active (journal callback; owned shards are swept on load),
 //      * mail gems: opening that mail on a computer (ComputerControllerPS.GetMailWidget),
@@ -498,21 +498,28 @@ public class WNCSystem extends ScriptableSystem {
   }
 
   // ask around: start price, doubled per use; the window opens at the first use and resets after N game hours
-  public func AskPrice() -> Int32 {
+  public func AskCount() -> Int32 {
     let n = WNC.F("wnc_askn");
-    if n > 0 && WNC.Now() - WNC.F("wnc_askt") >= WNCCfg.AskResetSeconds() { n = 0; }
+    return n > 0 && WNC.Now() - WNC.F("wnc_askt") >= WNCCfg.AskResetSeconds() ? 0 : n;
+  }
+
+  public func AskedOut() -> Bool = this.AskCount() >= WNCCfg.AskMax()
+
+  public func AskPrice() -> Int32 {
+    let n = this.AskCount();
     let p = WNCCfg.AskStart();
     while n > 0 && p < 100000000 { p *= 2; n -= 1; }
     return p;
   }
 
   public func Ask() -> String {
+    if this.AskedOut() { return "Nobody else is talking today. Try again later."; }
     let id = this.PickRandom();
     if id == 0 { return "Nobody's talking right now. Nothing new on the street."; }
     let price = this.AskPrice();
     if !WNC.Pay(price) { return "Not enough eddies for the tip (" + WNC.Eddies(price) + ")."; }
-    let n = WNC.F("wnc_askn");
-    if n == 0 || WNC.Now() - WNC.F("wnc_askt") >= WNCCfg.AskResetSeconds() { n = 0; WNC.SetF("wnc_askt", WNC.Now()); }
+    let n = this.AskCount();
+    if n == 0 { WNC.SetF("wnc_askt", WNC.Now()); }
     WNC.SetF("wnc_askn", n + 1);
     this.Reveal(id);
     return "\"" + this.Line(id) + "\" - " + this.Loc(id) + "  (on your map)";
