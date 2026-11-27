@@ -20,7 +20,7 @@ The website
 - A second tab lists every whisper still out there.
 
 The map
-- Only gems you've heard about get a pin, shown as a "?" icon.
+- Only gems you've heard about get a pin, shown as a shard icon.
 - Hover the pin to read the rumour and the place.
 
 The street talks

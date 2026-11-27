@@ -16,7 +16,7 @@ ArchiveXL not needed (the site art archive only adds its own files). Compiles cl
   the first visit that day, each behind its own tip (rolled once, 50-300 eddies, saved); "Ask around" = one extra
   whisper, 100 doubling per ask, at most 5 asks, back to 100 24 game hours after the first ask. STILL OUT THERE: every open whisper,
   newest first, 4 per page. Cases closed + next payout.
-- **Map pins**: the game's own "?" icon (part `undiscovered` of `mappin_icons.inkatlas`), set by wrapping the world map /
+- **Map pins**: the game's own shard icon (part `shard` of `mappin_icons.inkatlas`), set by wrapping the world map /
   minimap / in-world quest pin controllers' `UpdateIcon` for pins whose caption starts with `WhispersNC|`.
 - **The street**: entering a district or stepping out of a vehicle rolls once (20 %) for the nearest hidden gem within
   250 m that is not on the map yet; at most one roll per 12 game hours.

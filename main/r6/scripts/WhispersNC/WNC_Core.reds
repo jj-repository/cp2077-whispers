@@ -629,7 +629,7 @@ public final func GetMailWidget(documentAdress: SDocumentAdress) -> SDocumentWid
   return w;
 }
 
-// pin icon: the game's own plain "?" (part "undiscovered" of base\gameplay\gui\common\icons\mappin_icons.inkatlas, the atlas
+// pin icon: the game's own shard icon (part "shard" of base\gameplay\gui\common\icons\mappin_icons.inkatlas, the atlas
 // every quest / gig pin icon comes from) instead of the quest-giver icon. Our pins are found by their caption; the
 // mappin type / variant stay QuestStaticMappinDefinition + QuestGiverVariant (a variant the type allows).
 public func WNC_IsOurPin(m: wref<IMappin>) -> Bool = IsDefined(m) && StrBeginsWith(m.GetDisplayName(), "WhispersNC|")
@@ -637,25 +637,25 @@ public func WNC_IsOurPin(m: wref<IMappin>) -> Bool = IsDefined(m) && StrBeginsWi
 @wrapMethod(BaseWorldMapMappinController)
 protected func UpdateIcon() -> Void {
   wrappedMethod();
-  if WNC_IsOurPin(this.m_mappin) { inkImageRef.SetTexturePart(this.iconWidget, n"undiscovered"); }
+  if WNC_IsOurPin(this.m_mappin) { inkImageRef.SetTexturePart(this.iconWidget, n"shard"); }
 }
 
 @wrapMethod(MinimapQuestMappinController)
 protected final func UpdateIcon() -> Void {
   wrappedMethod();
-  if WNC_IsOurPin(this.m_questMappin) { inkImageRef.SetTexturePart(this.iconWidget, n"undiscovered"); }
+  if WNC_IsOurPin(this.m_questMappin) { inkImageRef.SetTexturePart(this.iconWidget, n"shard"); }
 }
 
 @wrapMethod(MinimapPOIMappinController)
 protected final func UpdateIcon() -> Void {
   wrappedMethod();
-  if WNC_IsOurPin(this.m_mappin) { inkImageRef.SetTexturePart(this.iconWidget, n"undiscovered"); }
+  if WNC_IsOurPin(this.m_mappin) { inkImageRef.SetTexturePart(this.iconWidget, n"shard"); }
 }
 
 @wrapMethod(QuestMappinController)
 protected func UpdateIcon() -> Void {
   wrappedMethod();
-  if WNC_IsOurPin(this.m_mappin) { inkImageRef.SetTexturePart(this.iconWidget, n"undiscovered"); }
+  if WNC_IsOurPin(this.m_mappin) { inkImageRef.SetTexturePart(this.iconWidget, n"shard"); }
 }
 
 // world map tooltip of our pins: "WhispersNC|<title>|<text>" in the pin's caption
