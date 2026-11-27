@@ -1,3 +1,7 @@
+0.1.3
+- New phone contact WHISPERS: at character level 5 it texts you once about the website NETdir://nc.whispers (checked
+  when you enter a district or step out of a vehicle). The contact stays in your phone for 3 game days, read or not,
+  then disappears for good. Not sent if you already opened the site.
 0.1.2
 - Website readable: everything bigger, the place line light on dark instead of dark grey. Two tabs: TODAY (the day's
   whispers + ask around) and STILL OUT THERE (every open whisper, newest first, 4 per page with NEWER / OLDER), so

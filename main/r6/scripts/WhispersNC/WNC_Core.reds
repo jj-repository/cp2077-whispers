@@ -427,6 +427,8 @@ public class WNCSystem extends ScriptableSystem {
   // ---- the street (district entered / V stepped out of a vehicle)
   public func Near() -> Void {
     this.CheckSpots();
+    let intro = WNCPhone.Get();
+    if IsDefined(intro) { intro.Check(); } // one-shot WHISPERS text at level 5 (WNC_Phone.reds)
     if !this.Started() || WNCCfg.NearPct() <= 0 { return; }
     let now = WNC.Now();
     let last = WNC.F("wnc_ptime");

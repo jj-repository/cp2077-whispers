@@ -8,6 +8,11 @@ Night City is full of hidden gems: a body nobody reported, a stash nobody came b
 
 FEATURES
 
+A text from WHISPERS
+- At level 5 a contact called WHISPERS texts you about the website, so you find it in-game.
+- The contact stays in your phone for 3 game days, read or not, then disappears.
+- Not sent if you already opened the site.
+
 The website
 - Open NETdir://nc.whispers on any computer.
 - Three new whispers every game day, each behind its own tip (50-300 eddies).

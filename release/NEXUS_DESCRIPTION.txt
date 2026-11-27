@@ -8,6 +8,7 @@ Night City is full of hidden gems: a body nobody reported, a stash nobody came b
 [size=4][b]Features[/b][/size]
 [list]
 [*][b]NETdir://nc.whispers[/b] - open it on any computer. Three new whispers per game day (posted on your first visit that day), each behind its own tip (50-300 eddies, fixed once posted). [b]Ask around[/b] for one extra whisper any time: 100 eddies, doubling with every ask, back to 100 a game day after your first ask. A second tab lists every whisper still out there, page by page.
+[*][b]A text from WHISPERS[/b]: at level 5, a contact called WHISPERS texts you about the website, so you find it in-game instead of from this page. The contact stays in your phone for 3 game days, read or not, then disappears. Not sent if you already opened the site.
 [*][b]Map pins only for what you've heard about[/b], shown as the game's own "?" icon. Hidden gems stay hidden until a whisper reveals them. The pin's tooltip shows the rumour and the place.
 [*][b]The street talks[/b]: when you enter a district or step out of a vehicle, there is a 20 % chance that the nearest hidden gem within 250 m gets revealed ("something happened near here"). At most once per game hour.
 [*][b]Closing a case[/b]:
@@ -20,6 +21,7 @@ Night City is full of hidden gems: a body nobody reported, a stash nobody came b
 [*][b]Rewards[/b]: every 10 closed cases crafting components + 150 eddies; close them all for 3000 eddies, legendary components and [b]Comrade's Hammer[/b].
 [*][b]Fair gates[/b]: city gems after "The Rescue" (Watson first, the rest after The Heist); Dogtown gems once Dogtown opens. Gems that become impossible through your choices or lifepath are dropped, never counted against you.
 [*][b]Zero idle cost[/b]: no timers, no polling, nothing per frame. Everything runs on game events (journal, facts, district changes, vehicle exits, item pickups, opening a mail).
+[*][b]No journal or quest edits[/b]: the WHISPERS contact is script-only, so it works with phone overhauls that show mod contacts from the vanilla message list.
 [/list]
 
 [size=4][b]Settings (Mod Settings, optional)[/b][/size]
