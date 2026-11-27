@@ -658,6 +658,23 @@ protected func UpdateIcon() -> Void {
   if WNC_IsOurPin(this.m_mappin) { inkImageRef.SetTexturePart(this.iconWidget, n"shard"); }
 }
 
+// pin colour: blue (state RemoteControlDriving = MainColors.ActiveBlue, as Fight Night's ring pins / Boosted's job pin)
+// on the world map, minimap (MinimapQuestMappinController inherits MinimapPOI's) and in the world
+@wrapMethod(BaseWorldMapMappinController)
+protected func ComputeRootState() -> CName {
+  return WNC_IsOurPin(this.m_mappin) ? n"RemoteControlDriving" : wrappedMethod();
+}
+
+@wrapMethod(MinimapPOIMappinController)
+protected func ComputeRootState() -> CName {
+  return WNC_IsOurPin(this.m_mappin) ? n"RemoteControlDriving" : wrappedMethod();
+}
+
+@wrapMethod(QuestMappinController)
+private func ComputeRootState() -> CName {
+  return WNC_IsOurPin(this.m_mappin) ? n"RemoteControlDriving" : wrappedMethod();
+}
+
 // world map tooltip of our pins: "WhispersNC|<title>|<text>" in the pin's caption
 @wrapMethod(WorldMapTooltipController)
 public func SetData(const data: script_ref<WorldMapTooltipData>, menu: ref<WorldMapMenuGameController>) -> Void {

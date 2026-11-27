@@ -21,14 +21,14 @@ Optional: Mod Settings (settings menu; without it: defaults)
 Incompatible: Missing Persons - Fixer's Hidden Gems, Pacifica Typhoon - Dogtown's Hidden Gems (same gems; remove them, progress carries over)
 
 FILES (name / category / description)
-1. Whispers of Night City  |  Main file  |  WhispersOfNightCity_v0.1.5.zip
+1. Whispers of Night City  |  Main file  |  WhispersOfNightCity_v0.1.6.zip
 The mod, one download: the website NETdir://nc.whispers, the WHISPERS intro text at level 5, map pins, the street rolls, rewards, the settings menu (with Mod Settings). Needs RED4ext, redscript, Codeware, Browser Extension.
 
-CHANGELOG (Nexus "Changelog" tab, version 0.1.5)
-- Map pins now use the game's shard icon (the one loose shards show in the world) instead of the "?".
+CHANGELOG (Nexus "Changelog" tab, version 0.1.6)
+- Map pins are now blue (like Fight Night's ring pins) on the world map, the minimap and in the world.
 
 UPDATE NOTE (optional sticky post / news)
-0.1.5 is out: whisper pins on the map now show the shard icon. Update by extracting over the old files; saves carry over.
+0.1.6 is out: whisper pins on the map are now blue. Update by extracting over the old files; saves carry over.
 
 PERMISSIONS (suggestion)
 - Upload to other sites: ask me first.
